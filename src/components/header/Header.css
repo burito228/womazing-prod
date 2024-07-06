@@ -1,0 +1,76 @@
+/*Header*/
+.header{
+    padding: 51px 0 0 0;
+    align-items: center;
+    font-size: 15px;
+}
+.navigation li,a{
+    display: inline-flex;
+    color: #000;
+}
+.navigation-new{
+    display: none;
+    position: absolute;
+    top: 57px;
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 39px;
+}
+.navigation-new__item{
+    margin-bottom: 10px;
+}
+.navigation-new__item:last-of-type{
+    margin-bottom: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+}
+.navigation__item{
+    margin-right: 45px;
+}
+.navigation__item:hover .navigation-new{
+    display: flex;
+    flex-direction: column;
+}
+.navigation-new:hover{
+    display: flex;
+    flex-direction: column;
+}
+.nav-logo a:hover{
+    border-bottom: 0;
+}
+.nav-active a{
+    font-weight: 700;
+    color: #6E9C9F;
+}
+.navigation__item:last-of-type{
+    margin-right: 0;
+}
+.nav-tel{
+    display: flex;
+}
+.nav-tel__btn{
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0) url(/public/img/tel.svg) center center no-repeat;
+    padding: 0;
+    transition: background 0.5s ease;
+    margin-right: 9px;
+}
+.nav-tel__btn:hover{
+    background: rgba(110, 156, 159, 1) url(/public/img/tel-white.svg) center center no-repeat;
+}
+.nav-bag__btn{
+    background: url(/public/img/bag.svg);
+    width: 24px;
+    height: 24px;
+}
+.show{
+    display: block !important;
+}
