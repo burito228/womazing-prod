@@ -1,0 +1,117 @@
+/*Content*/
+.content{
+    padding: 65px 0;
+}
+.info-block{
+    display: flex;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.info-block-text__title{
+    margin-bottom: 46px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.info-block-text__paragraph{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.info-block-text{
+    width: 542px;
+    margin-left: 94px;
+}
+.info-block-text__second-title{
+    margin-bottom: 46px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.info-block-text__second-paragraph{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.info-block-text__second{
+    width: 542px;
+    margin-right: 123px;
+}
+.content__btn{
+    background: #6E9C9F;
+    color: #fff;
+    padding: 22px 50px;
+    margin: 0 auto;
+    transition: background 0.5s ease;
+    width: 260px;
+}
+.content__btn:hover{
+    border-bottom: 0;
+    text-decoration: none;
+}
+.content__btn:hover{
+    background: #509498;
+}
+
+/*Mobile*/
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}
+	
+
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+    .info-block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 130px;
+        flex-direction: column;
+    }
+    .info-block-text__second {
+        text-align: center;
+        margin-right: 0;
+    }
+    .info-block-text {
+        width: 542px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .info-block-text__title{
+        margin-top: 30px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+   .navigation{
+    display: flex;
+    flex-direction: column;
+   }
+   .info-block-img__item{
+    width: 300px;
+   }
+   .info-block-text{
+    width: 300px;
+   }
+   .info-block-text__second{
+    width: 300px;
+   }
+}
+
+/* Extra small: 320px - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+		width: auto;
+	}
+    
+}

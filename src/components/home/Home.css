@@ -9,7 +9,7 @@
     z-index: -1;
 }
 .first-screen{
-    padding-top: 41px;
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -67,26 +67,31 @@
     background: #509498;
     border-bottom: 0;
 }
-
+.photo-block{
+    position: relative;
+}
+.block-color{
+    width: 565px;
+    top: -80px;
+}
 .main-photo{
     width: 410px;
     height: 646px;
-    position: relative;
 }
 .second-photo{
     position: absolute;
     width: 197px;
     height: 197px;
     z-index: 1;
-    right: 290px;
-    top: 250px;
+    right: -50px;
+    top: 150px;
 }
 .last-photo{
     position: absolute;
     width: 190px;
     height: 318px;
-    top: 507px;
-    right: 730px;
+    top: 350px;
+    left: -70px;
 }
 .dots{
     display: flex;

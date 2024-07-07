@@ -1,15 +1,12 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Header.css"
-import { useState } from "react"
 
 const Header = () => {
 
     const [activeModal, setActiveModal] = useState(false)
     const [anotherModal, setAnotherModal] = useState(false)
-    const sms = {
-        text: '',
 
-    }
     const handleModalWindow = (i) => {
         setActiveModal(i)
     }
@@ -28,7 +25,7 @@ const Header = () => {
                 <nav className="nav-block">
                     <ul className="navigation">
                         <li className="navigation__item nav-active"><Link to="/">Главная</Link></li>
-                        <li className="navigation__item" id="shop"><a href="shop.html">Магазин</a>
+                        <li className="navigation__item" id="shop"><Link to='shop'>Магазин</Link>
                             <ul className="navigation-new">
                                 <li className="navigation-new__item"><a href="product.html">Пальто</a></li>
                                 <li className="navigation-new__item"><a href="product.html">Свитшоты</a></li>
@@ -36,8 +33,8 @@ const Header = () => {
                                 <li className="navigation-new__item"><a href="product.html">Толстовки</a></li>
                             </ul>
                         </li>
-                        <li className="navigation__item"><a href="about.html">О бренде</a></li>
-                        <li className="navigation__item"><a href="contact.html">Контакты</a></li>
+                        <li className="navigation__item"><Link to="about">О бренде</Link></li>
+                        <li className="navigation__item"><Link to="contact">Контакты</Link></li>
                     </ul>
                 </nav>
                 <div className="nav-tel">
@@ -68,7 +65,7 @@ const Header = () => {
                     <p className="nav-tel__item"><a href="tel:+74958235412">+7 (495) 823-54-12</a></p>
                 </div>
                 <div className="nav-bag">
-                    <a href="bag.html" className="nav-bag__btn"></a>
+                    <Link to="bag" className="nav-bag__btn"></Link>
                 </div>
                 <div className="mobile-wrapper">
                 <button type="button" className="mobile-menu">MENU</button>

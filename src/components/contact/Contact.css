@@ -1,0 +1,65 @@
+.map{
+    width: auto;
+    height: 476px;
+    background: #DDDDDD;
+    margin-bottom: 130px;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    width: 943px;
+    margin-bottom: 130px;
+}
+.data-block__title{
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 19px;
+}
+.form{
+    width: 443px;
+}
+.form__title{
+    margin-bottom: 62px;
+}
+.form-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+}
+.form-block__item{
+    margin-bottom: 35px;
+    width: 350px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+}
+.form-block__desc{
+    margin-bottom: 35px;
+    height: 135px;
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+}
+.form-block__btn{
+    padding: 22px 50px;
+    color: #fff;
+    background: #6E9C9F;
+    width: 189px;
+    transition: background 0.5s ease;
+}
+.form-block__btn:hover{
+    background: #509498;
+}
+.form__message{
+    display: none;
+    background: #F1EADC;
+    font-size: 17px;
+    padding: 30px 76px;
+}

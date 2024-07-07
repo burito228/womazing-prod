@@ -1,0 +1,218 @@
+.content{
+    padding-bottom: 130px;
+}
+.category{
+    display: flex ;
+    margin-bottom: 92px;
+}
+.category__btn{
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid #000000;
+}
+.category__btn:last-of-type{
+    margin-right: 0;
+}
+.category__btn_active{
+    background: #000;
+    color: #fff;
+}
+.goods-tape__view{
+    color: #909090;
+    margin-bottom: 65px;
+    display: block;
+}
+.goods-tape__view:last-of-type{
+    margin-bottom: 0;
+}
+.goods-tape-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price-block__item-old{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-decoration-line: line-through;
+    color: #9C9C9C;
+    margin-right: 10px;
+}
+.price-block__item-new{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+.block-text{
+    text-align: center;
+    margin-top: 24px;
+}
+.block-text__title{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.card__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 478px;
+    width: 350px;
+    opacity: 0;
+    visibility: none;
+    transition: .5s ease;
+    background:rgba(110, 156, 159, 0.64) url(/public/img/arrow-right.svg) no-repeat center center;
+}
+.card__overlay:hover{
+    border-bottom: 0;
+}
+.goods-tape-block__item-card:hover .card__overlay{
+    opacity: 1;
+}
+.goods-tape-block__item-card{
+    position: relative;
+   transition: opacity .5s ease; 
+}
+.goods-tape-block__item{
+    display: none;
+    margin-bottom: 65px;
+}
+.goods-tape-block__item-next{
+    display: none;
+    margin-bottom: 65px;
+}
+.goods-tape-block__item:last-of-type{
+    margin-right: 0;
+}
+.pag__btn{
+    background: #fff;
+    border: 1px solid #000000;
+    padding: 9px 16.5px;
+    margin-right: 14px;
+}
+.pag{
+    display: flex;
+    text-align:  center;
+    margin: 154px auto 0;
+    width: 140px;
+}
+.pag__btn_active{
+    background: #000;
+    color: #fff;
+}
+.pag__arr-right{
+    background: url(/public/img/new-right.svg) center center no-repeat;
+    padding: 0;
+    width: 20px;
+}
+.show{
+    display: block !important;
+}
+.none{
+    display: none;
+}
+.flex{
+    display: flex !important;
+}
+.goods-tape_space{
+    margin-bottom: 0 !important;
+}
+.goods-tape-block__item_space{
+    margin-bottom: 65px;
+}
+.goods-tape-block__item_space:last-of-type{
+    margin-bottom: 65px;
+}
+
+/*Bread*/
+.bread-nav{
+    margin-bottom: 80px;
+    height: 110px;
+}
+.bread-nav__title{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.1em;
+    margin-bottom: 26px;
+}
+.bread-nav-block{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.bread-nav-block__line{
+    height: 2px;
+    width: 10px;
+    background: #000;
+    margin: 0 13px;
+}
+.bread-nav-block__item_select{
+    color: #909090;
+}
+
+/*Mobile*/
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}
+	
+
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+    .category__btn:nth-child(n+4) {
+        margin-top: 10px;
+    }
+    .category{
+        flex-wrap: wrap;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+    .category__btn:nth-child(n+3) {
+        margin-top: 10px;
+    }
+    .goods-tape-block__item .model{
+        width: 260px;
+    }
+    .card__overlay{
+        width: 300px;
+        height: 410px;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .goods-tape-wrapper{
+        justify-content: center;
+    }
+}
+
+/* Extra small: 320px - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+		width: auto;
+	}
+    .category__btn:nth-child(n+3) {
+        margin-top: 0;
+    }
+    .category__btn{
+        margin-bottom: 10px;
+    }
+    .category__btn:last-of-type{
+        margin-bottom: 0;
+    }
+}

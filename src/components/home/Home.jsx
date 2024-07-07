@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 const Home = () => {
@@ -27,14 +28,14 @@ const Home = () => {
                         <div className="offer-block__arrow">
                             <a href="#" className="offer-block__arrow_down"></a>
                         </div>
-                        <a href="shop.html" className="offer__btn btn" target="_blank">Открыть магазин</a>
+                        <Link to="shop" className="offer__btn btn">Открыть магазин</Link>
                     </div>
                     <div className="swiper-pagination1"></div>
-                <div className="photo-block">
-                    <img src="img/main-photo.jpg" alt="main-photo" className="main-photo"/>
-                    <img src="img/second-photo.jpg" alt="second-photo" className="second-photo"/>
-                    <img src="img/last-photo.jpg" alt="last-photo" className="last-photo"/>
-                </div>
+                    <div className="photo-block">
+                        <img src="img/main-photo.jpg" alt="main-photo" className="main-photo"/>
+                        <img src="img/second-photo.jpg" alt="second-photo" className="second-photo"/>
+                        <img src="img/last-photo.jpg" alt="last-photo" className="last-photo"/>
+                    </div>
             </section>
 
             <section className="new-collections" id="new-collections">
@@ -82,7 +83,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <a href="shop.html" className="new-collections__btn btn" target="_blank">Открыть магазин</a>
+                <Link to="shop" className="new-collections__btn btn">Открыть магазин</Link>
             </section>
 
             <section className="characteristics" id="characteristics">
